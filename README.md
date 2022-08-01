@@ -1,2 +1,2 @@
-# python-basic with 나동빈
+# python-basic 
 low-level-python Programming
