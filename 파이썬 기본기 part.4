@@ -1,4 +1,4 @@
-조건문, 비교연산자
+조건문, 비교연산자, in연산자
 
 1. 조건문(if문)
    특정 조건에서 실행시키기 위한 구문이다.
@@ -37,7 +37,7 @@ point = 88
 
 if point >= 90:
   print("A")
-elif point < 90 and point > 80:
+elif point < 90 and point > 80:           > 부등식 쓸때 80 < point < 90 으로도 쓸 수 있다. 파이썬만 그렇게 해도 되고, c++과 c는 안된다. point에 대해 참으로 인식해 버리기 때문
   print("B")
 elif point < 80 and point > 70:
   print("C")
@@ -55,4 +55,21 @@ else
 
 X==Y  >  X와Y가 같을 때 참이다.
 X!=Y  >  X와Y가 같지 않을 때(다를때) 참(True)이다.
+X>Y   >  X가 Y보다 클 때 참이다.
+X>=Y  >  X가 Y보다 크거나 같을 때 참이다.
 
+
+in연산자
+- 다수의 데이터를 담는 자료형을 위해 in 연산자와 not in 연산자가 제공된다.
+- 리스트, 튜플, 문자열, 딕셔너리 모두에서 사용가능.
+x in (list) > 리스트 안에 x가 들어가 있을 때 참(True)이다.
+x not in [문자열] > 문자열 안에 x가 들어가 있지 않을 때 참이다.
+
+조건문의 간소화
+-조건문에서 실행될 소스코드가 한 줄인 경우, 굳이 줄 바꿈을 하지 않고도 간략하게 표현할 수 있다.
+
+조건부 표현식(Conditional Expression)은 if ~else문을 한 줄에 작성할 수 있도록 해준다.
+score=85
+result = "success" if score >= 80 else "fail"
+
+print(result)
